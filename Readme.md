@@ -20,11 +20,16 @@
   - TS configured out-of-the-box
   - Sample test case  
 
+- [Rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) (VSCode extention)
+
 ---
 
-### Install packages
+### Pre-requisites
 
-> Make sure to install packages before starting the app
+- [Install all packages](#install-packages).
+- Initialize/configure [environment variables](.env)
+
+### Install packages
 
 ```bash
 npm i

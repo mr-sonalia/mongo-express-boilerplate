@@ -1,13 +1,15 @@
+import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import blogsRouter from "./controllers/blogs";
 import logger from "./utils/logger";
 import middlewares from "./utils/middlewares";
-import cors from "cors";
 
-const MONGODB_PASSWORD = "password";
-const MONGODB_URI = `uri`;
+dotenv.config();
+
+const MONGODB_PASSWORD = process.env.MONGODB_PASSWORD;
+const MONGODB_URI = process.env.MONGODB_TEST_URI;
 
 
 logger.info("Attempting DB connection");
