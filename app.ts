@@ -7,7 +7,7 @@ import middlewares from "./utils/middlewares";
 import cors from "cors";
 
 const MONGODB_PASSWORD = "password";
-const MONGODB_URI = `url`;
+const MONGODB_URI = `uri`;
 
 
 logger.info("Attempting DB connection");
