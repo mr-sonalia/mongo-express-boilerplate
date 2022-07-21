@@ -27,7 +27,7 @@
 ### Pre-requisites
 
 - [Install all packages](#install-packages).
-- Initialize/configure [environment variables](.env)
+- Initialize/configure [environment variables](.env), add to the [interface](environment.d.ts).
 
 ### Install packages
 
@@ -45,6 +45,6 @@ npm start
 
 ### Jest testing
 
-```
+```bash
 npm run test
 ```
