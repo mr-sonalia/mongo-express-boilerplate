@@ -1,15 +1,17 @@
 # Mongo-Express Boilerplate
 
-> Project to reduce new project creation overhead.Because why not!
+> Creating a new ExpressJS project is cumbersome, so I created a boilerplate, because why not!
 
-## Functionalities
+## Features
 
 - Express
-  - Scalable folder structure
+  - Scalable project structure
   - Server
   - Router
   - Midlewares
-  - TS support
+  - TS Only
+  - Color coded console logs
+  - Nodemon watcher
 
 - MongoDB
   - Mongoose API
@@ -17,17 +19,15 @@
   - Models
 
 - Jest
-  - TS configured out-of-the-box
+  - TS configured
   - Sample test case  
 
-- [Rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) (VSCode extention)
+- [Rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) (VSCode extension)
+- Heroku [Procfile](Procfile). **Note:** Procfile is configured to use dist/index.js as the entrypoint
 
 ---
 
-### Pre-requisites
-
-- [Install all packages](#install-packages).
-- Initialize/configure [environment variables](.env), add to the [interface](environment.d.ts).
+> Initialize/configure [environment variables](.env), add env variables to the [namespace](environment.d.ts)
 
 ### Install packages
 
@@ -35,15 +35,33 @@
 npm i
 ```
 
-### Start server
+---
 
-> The app runs on nodemon which is yet to be configured**
+### Starting the server
+
+1. With nodemon
 
 ```bash
-npm start
+npm run server:nodemon
 ```
 
-### Jest testing
+2. Without nodemon
+
+```bash
+npm run server
+```
+
+---
+
+### Build .ts files to the /dist folder
+
+```bash
+npm run build
+```
+
+---
+
+### Jest test runner
 
 ```bash
 npm run test

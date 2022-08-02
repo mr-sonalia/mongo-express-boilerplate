@@ -1,10 +1,12 @@
 {
   "name": "blogs-mongo-express",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Express and MongoDB boilerplate project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch index.ts --exec ts-node index.ts",
+    "server": "ts-node index",
+	"server:nodemon": "nodemon",
+	"build": "tsc",
     "test": "jest"
   },
   "keywords": [],

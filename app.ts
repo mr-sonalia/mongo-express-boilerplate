@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import morgan from "morgan";
-import blogsRouter from "./controllers/blogs";
+import { blogsRouter } from "./routes";
 import logger from "./utils/logger";
 import middlewares from "./utils/middlewares";
 

@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
-import Blogs from "../models/blog";
+import { Blogs } from "../models";
 
 const blogsRouter = express.Router();
 

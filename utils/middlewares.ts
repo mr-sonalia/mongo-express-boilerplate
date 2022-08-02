@@ -3,10 +3,6 @@ import logger from "./logger";
 
 const requestLogger = 
 (request: Request, response: Response, next: NextFunction) => {
-	// logger.info("Method: ", request.method);
-	// logger.info("Path: ", request.path);
-	// logger.info("Body: ", request.body);
-	// logger.info("---");
 	logger.info(
 		`${request.method} ${request.path} ${JSON.stringify(request.body)}`,
 	);
